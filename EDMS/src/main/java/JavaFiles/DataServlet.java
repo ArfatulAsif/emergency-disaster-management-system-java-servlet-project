@@ -50,7 +50,7 @@ public class DataServlet extends HttpServlet {
 	        	{
 	        		e.printStackTrace();
 	        	}
-	        	String query = "SELECT * FROM location_added  order by Second desc";
+	        	String query = "SELECT * FROM location_added  order by TotalPriority desc";
 				
 				Statement stmt;
 				ArrayList<String>Verified1=new ArrayList();
