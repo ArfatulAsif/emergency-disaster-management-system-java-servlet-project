@@ -155,7 +155,20 @@ try
          Date.add(Date1);
          String Username1 = rs.getString("Username");
          Username.add(Username1);
-
+	 String query3="select * from registrationinfo where Username='"+Username1+"'";
+         Statement stmt3;
+         String name1=null;
+         try{
+        	 stmt3 = con.createStatement();
+        	 ResultSet rs2=stmt3.executeQuery(query3);
+             
+             while(rs2.next()){
+            	 name1=rs2.getString("Name");
+             }
+         }catch(Exception e){
+        	 
+         }
+         Name.add(name1);
          int Affected1 = rs.getInt("Total");
          Affected.add("Help given to "+Affected1+" people");
 
