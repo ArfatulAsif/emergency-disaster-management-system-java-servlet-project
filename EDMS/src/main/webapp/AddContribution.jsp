@@ -47,7 +47,7 @@ String LocationUsername = request.getParameter("LocationUsernameFromLocationProf
                         <label class="label">
                             <span class="label-text text-xl">Help provided for how many people?</span>
                         </label>
-                        <input type="number" class="input input-bordered w-full" />
+                        <input type="number" class="input input-bordered w-full" name="help-Count"/>
                         
 
                         <div class="form-control">
