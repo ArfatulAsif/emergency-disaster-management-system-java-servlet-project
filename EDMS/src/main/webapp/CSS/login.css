@@ -1,0 +1,51 @@
+.container
+{
+    
+    margin: 0 auto;
+    padding: 0px;
+    background-color: rgb(238, 233, 228);
+   
+}
+body{
+   background-color: rgb(238, 233, 228);
+}
+.navbar 
+{
+    
+    max-height: 9vh;
+    background-color: rgb(218, 182, 134)e;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    
+    font-size:15px;
+    margin-right:0px;
+    flex: 1;
+     
+}
+.log{
+    width: 30%;
+    margin: 8vh 20vh 20vh 65vh;
+    height: 30vw;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 20vh;
+    border-radius: 5%;
+}
+h2{
+    text-align: center;
+    padding-top: 5vh;
+}
+input 
+{
+    width: 60%;
+    height:6vh;
+    margin-left:6vw;
+    margin-top: 5vh;
+}
+p a{
+    margin-left:6vw;
+    
+    color: orange;
+}

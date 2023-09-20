@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+
+/* My styles */
+/* Get fonts from google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
+    /* overflow: hidden; */
+}
+
+.my-container {
+    max-width: 2520px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+/* breakpoint for small size screen */
+@media only screen and (max-width: 640px) {
+    .my-container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+/* breakpoint for medium size screen */
+@media only screen and (max-width: 768px) {
+    .my-container {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+/* breakpoint for xl size screen */
+@media only screen and (max-width: 768px) {
+    .my-container {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}

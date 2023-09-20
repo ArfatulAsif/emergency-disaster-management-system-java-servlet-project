@@ -1,0 +1,71 @@
+.container
+{
+    
+    margin: 0 auto;
+    padding: 0px;
+    background-color: rgb(238, 233, 228);
+   
+}
+body{
+   background-color: rgb(238, 233, 228);
+}
+.navbar 
+{
+    
+    max-height: 9vh;
+    background-color: rgb(218, 182, 134)e;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    
+    font-size:15px;
+    margin-right:0px;
+    flex: 1;
+     
+}
+.log{
+    width: 60%;
+    margin: 8vh 20vh 20vh 40vh;
+    height: 75vw;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 20vh;
+    border-radius: 5%;
+}
+h2{
+    margin-right: 5vh;
+    text-align: center;
+    padding-top: 5vh;
+}
+input 
+{
+    width: 60%;
+    height:6vh;
+    margin-left:10vw;
+    margin-top: 5vh;
+}
+.dropbox{
+    width: 60%;
+    height:6vh;
+    margin-left:10vw;
+    margin-top: 5vh;
+}
+p{
+    width: 60%;
+    height:2vh;
+    margin-left:10vw;
+    margin-top: 5vh;
+}
+.sobi_tul{
+    width: 60%;
+    height:6vh;
+    margin-left:10vw;
+    margin-top: 1vh;
+}
+.lekha_tul{
+    width: 60%;
+    height:20vh;
+    margin-left:10vw;
+    margin-top: 5vh;
+}

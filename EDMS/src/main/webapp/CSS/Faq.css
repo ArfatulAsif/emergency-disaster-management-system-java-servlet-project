@@ -1,0 +1,94 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 242, 238);
+}
+
+.conttainer
+{
+    
+    margin: 0 auto;
+    padding: 0px;
+    background-color: rgb(245, 242, 238);
+   
+}
+.container {
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 4vw;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.faq-item h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.faq-item p {
+    color: #666;
+}
+.navbar 
+{
+    
+    max-height: 9vh;
+    background-color: orange;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #967212;
+    font-size:15px;
+    margin-right:0px;
+    flex: 1;
+     
+}
+
+.logo
+{
+    max-height: 50px;
+    font-size: 35px;
+    margin-left: 30px;
+
+}
+
+.navbar ul 
+{
+    list-style:none;
+    display:flex;
+    
+   
+}
+.navbar li 
+{
+    margin-right:50px;
+    font-size: 16px;;
+    cursor: pointer;
+    margin-top : auto;
+   
+
+}
+
+.navbar a 
+{
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+    
+}
+.material-symbols-outlined {
+    font-family: 'Material Icons';
+    font-size: 24px;
+    vertical-align: middle;
+}
