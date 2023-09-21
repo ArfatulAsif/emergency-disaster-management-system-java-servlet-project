@@ -37,6 +37,10 @@ EDMS serves as an information hub for individuals, volunteer groups, and social 
 
 ## Home Page
 
+<img src="Home1.PNG">
+<br>
+<img src="Home2.PNG">
+
 This is the home page of EDMS. Here you can find a navbar. From there one can go 
 to shelter and areas, social, FAQ, or  profile page   
 Here we have a brief description of EDMS . ...
@@ -49,6 +53,8 @@ one can contact us about any kind of queries they have.
 At the end, we have the footer section of EDMS. 
 
 ## Shelter and Areas 
+
+<img src="Shelter.PNG">
 
 The page is the core of the emergency disaster management system. Here you can see a 
 search bar. Right here you can see name-type activities of relief shelters and locations.
@@ -82,6 +88,8 @@ However, to access the profile page, users will be required to log in.
 
 ## Social Page
 
+<img src="Social.PNG">
+
 Our social page is customized for each user. 
 We employ algorithms to determine places that are geographically near to each user,
 taking into account their location data. 
@@ -106,6 +114,8 @@ Users can create accounts to access the full features of EDMS.
 Registered users can log in to access their profiles and utilize the system's features.
 
 ## Profile Page
+
+<img src="Profile.PNG">
 
 Individuals, government officials, and volunteer groups have their profiles where they can add posts, locations, and update their information.
 
