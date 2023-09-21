@@ -136,6 +136,10 @@ Profile owners can update their contact information and password as needed.
 
 ## Location Profile
 
+<img src="LocProfile1.PNG">
+<br>
+<img src="LocProfile2.PNG">
+
 Each added location has its profile, where users can ask for help and add contribution information.
 
 ## Ask For Help
