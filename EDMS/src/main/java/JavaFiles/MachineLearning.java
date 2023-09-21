@@ -151,9 +151,6 @@ public class MachineLearning extends HttpServlet {
 			}
 			
 			
-			
-			
-			
 			long xx = secondsSinceEpoch;
 			long yy = secondsSinceEpoch-86400*3;
 			
@@ -187,6 +184,28 @@ public class MachineLearning extends HttpServlet {
 			}
 			
 			
+			
+			
+			
+			String Username="";
+			
+			for(int j=0;j<LocationUsername.get(i).length()-4;j++)
+			{
+				Username += LocationUsername.get(i).charAt(j);
+				
+				String temp="";
+				
+				temp += LocationUsername.get(i).charAt(j+1);
+				temp += LocationUsername.get(i).charAt(j+2);
+				temp += LocationUsername.get(i).charAt(j+3);
+				temp += LocationUsername.get(i).charAt(j+4);
+				
+				if(temp.equals("_loc"))
+				{
+					break;
+				}
+			}
+
 			
 			
 			int MLvalue = 0;
@@ -267,6 +286,34 @@ public class MachineLearning extends HttpServlet {
 		        }
 				
 				
+				
+				
+				try {
+		            // Establish a database connection
+		            
+
+		            // Define the SQL query with placeholders
+					String sql = "UPDATE "+Username+"_location SET  Activity = ? WHERE LocationUsername = ?";
+
+		            // Create a prepared statement
+		            PreparedStatement preparedStatement = con.prepareStatement(sql);
+
+		            // Set the new total_priority, new priority, and condition values as parameters
+		   
+		            preparedStatement.setString(1 ,"Critical Help Needed");
+		            preparedStatement.setString(2, LocationUsername.get(i));
+
+		            // Execute the update
+		            int rowsUpdated = preparedStatement.executeUpdate();
+		            System.out.println("Rows updated: " + rowsUpdated);
+
+		            // Close the resources
+		            preparedStatement.close();
+		            
+		        } catch (SQLException e) {
+		            e.printStackTrace();
+		        }
+				
 			}
 			
 			else 
@@ -295,6 +342,41 @@ public class MachineLearning extends HttpServlet {
 		            }
 		            
 		            preparedStatement.setString(3, LocationUsername.get(i));
+
+		            // Execute the update
+		            int rowsUpdated = preparedStatement.executeUpdate();
+		            System.out.println("Rows updated: " + rowsUpdated);
+
+		            // Close the resources
+		            preparedStatement.close();
+		            
+		        } catch (SQLException e) {
+		            e.printStackTrace();
+		        }
+				
+				
+				try {
+		            // Establish a database connection
+		            
+
+		            // Define the SQL query with placeholders
+					String sql = "UPDATE "+Username+"_location SET  Activity = ? WHERE LocationUsername = ?";
+
+		            // Create a prepared statement
+		            PreparedStatement preparedStatement = con.prepareStatement(sql);
+
+		            // Set the new total_priority, new priority, and condition values as parameters
+		   
+		            if(askhelp>0)
+		            {
+		            	preparedStatement.setString(1 ,"Active");
+		            }
+		            else 
+		            {
+		            	preparedStatement.setString(1 ,"Inactive");
+		            }
+		            
+		            preparedStatement.setString(2, LocationUsername.get(i));
 
 		            // Execute the update
 		            int rowsUpdated = preparedStatement.executeUpdate();
