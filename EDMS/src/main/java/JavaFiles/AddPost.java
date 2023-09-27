@@ -134,8 +134,20 @@ public class AddPost extends HttpServlet {
 	Part part1=request.getPart("ImageName1");
     Part part2=request.getPart("ImageName2");
     
-   
-		
+    String contentType1 = part1.getContentType();
+	String contentType2 = part2.getContentType();
+	 if (!(contentType1 != null && (contentType1.startsWith("image/jpeg") || contentType1.startsWith("image/png") || contentType1.startsWith("image/gif") || contentType1.startsWith("image/jpg") || contentType1.startsWith("image/svg") || contentType1.startsWith("image/webp")|| contentType1.startsWith("image/JPEG") || contentType1.startsWith("image/PNG") || contentType1.startsWith("image/GIF") || contentType1.startsWith("image/JPG") || contentType1.startsWith("image/SVG") || contentType1.startsWith("image/WEBP")))) {
+		 	request.setAttribute("message", "Give a proper image ( Photo 1)");
+		 	String goUrl="AddPost.jsp";
+		    request.getRequestDispatcher(goUrl).forward(request, response);
+	    }
+	 else if (!(contentType2 != null && (contentType2.startsWith("image/jpeg") || contentType2.startsWith("image/png") || contentType2.startsWith("image/gif") || contentType2.startsWith("image/jpg") || contentType2.startsWith("image/svg") || contentType2.startsWith("image/webp")|| contentType2.startsWith("image/JPEG") || contentType2.startsWith("image/PNG") || contentType2.startsWith("image/GIF") || contentType2.startsWith("image/JPG") || contentType2.startsWith("image/SVG") || contentType2.startsWith("image/WEBP")))) {
+		 	request.setAttribute("message", "Give a proper image  ( Photo 2)");
+		 	String goUrl="AddPost.jsp";
+		    request.getRequestDispatcher(goUrl).forward(request, response);
+	    }
+	 else {
+	
     if(part1!=null && part2!=null) {
 			try {
 				PreparedStatement ps=con.prepareStatement("insert into "+Username+"_post"+"(Description,Photo1,Photo2,Location,Affected,Date,Second)values(?,?,?,?,?,?,?)");
@@ -181,10 +193,15 @@ public class AddPost extends HttpServlet {
 			}
 			
 		}
-    else 
-    {
-    	System.out.println("Photot somosssa");
-    }
-    response.sendRedirect("Profile.jsp");
-	}
+    	else 
+    	{
+    		System.out.println("Photot somosssa");
+    	}
+     }
+     response.sendRedirect("Profile.jsp");
+   }
+	
+	
+	
+	
 }
