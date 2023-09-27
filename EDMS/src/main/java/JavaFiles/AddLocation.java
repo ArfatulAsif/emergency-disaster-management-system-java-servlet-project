@@ -125,6 +125,21 @@ public class AddLocation extends HttpServlet {
         	{
         		e.printStackTrace();
         	}
+         
+         
+         String contentType1 = part1.getContentType();
+ 		String contentType2 = part2.getContentType();
+ 		 if (!(contentType1 != null && (contentType1.startsWith("image/jpeg") || contentType1.startsWith("image/png") || contentType1.startsWith("image/gif") || contentType1.startsWith("image/jpg") || contentType1.startsWith("image/svg") || contentType1.startsWith("image/webp")|| contentType1.startsWith("image/JPEG") || contentType1.startsWith("image/PNG") || contentType1.startsWith("image/GIF") || contentType1.startsWith("image/JPG") || contentType1.startsWith("image/SVG") || contentType1.startsWith("image/WEBP")))) {
+ 			 	request.setAttribute("message", "Give a proper image ( Photo 1)");
+ 			 	String goUrl="AddLocation.jsp";
+ 			    request.getRequestDispatcher(goUrl).forward(request, response);
+ 		    }
+ 		 else if (!(contentType2 != null && (contentType2.startsWith("image/jpeg") || contentType2.startsWith("image/png") || contentType2.startsWith("image/gif") || contentType2.startsWith("image/jpg") || contentType2.startsWith("image/svg") || contentType2.startsWith("image/webp")|| contentType2.startsWith("image/JPEG") || contentType2.startsWith("image/PNG") || contentType2.startsWith("image/GIF") || contentType2.startsWith("image/JPG") || contentType2.startsWith("image/SVG") || contentType2.startsWith("image/WEBP")))) {
+ 			 	request.setAttribute("message", "Give a proper image  ( Photo 2)");
+ 			 	String goUrl="AddLocation.jsp";
+ 			    request.getRequestDispatcher(goUrl).forward(request, response);
+ 		    }
+ 		 else {
 		
 		try {
 			InputStream is1=part1.getInputStream();
@@ -219,6 +234,7 @@ public class AddLocation extends HttpServlet {
 		}catch(Exception e) {
 			
 		}
+ 	   }
 	}
 
 }
