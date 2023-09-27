@@ -128,6 +128,15 @@ public class Registration extends HttpServlet {
 		out=response.getWriter();
 		int res=0;
 		Part part=request.getPart("ImageName");
+		
+		String contentType1 = part.getContentType();
+		 if (!(contentType1 != null && (contentType1.startsWith("image/jpeg") || contentType1.startsWith("image/png") || contentType1.startsWith("image/gif") || contentType1.startsWith("image/jpg") || contentType1.startsWith("image/svg") || contentType1.startsWith("image/webp")|| contentType1.startsWith("image/JPEG") || contentType1.startsWith("image/PNG") || contentType1.startsWith("image/GIF") || contentType1.startsWith("image/JPG") || contentType1.startsWith("image/SVG") || contentType1.startsWith("image/WEBP")))) {
+			 	request.setAttribute("message", "Give a proper image");
+			    request.getRequestDispatcher("Registration.jsp").forward(request, response);
+		    } else {
+		    	
+		    
+		
 		if(part!=null) {
 			try {
 				PreparedStatement ps=con.prepareStatement("insert into registrationinfo(Image,Name,Username,Password,Type,ContactNo,Email,Description,Location)values(?,?,?,?,?,?,?,?,?)");
@@ -162,6 +171,7 @@ public class Registration extends HttpServlet {
 				e.printStackTrace();
 			}
 			
+		   }
 		}
 	  }
 	}
