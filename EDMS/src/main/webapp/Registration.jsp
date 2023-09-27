@@ -16,7 +16,7 @@
 	}
 	try
 	{
-		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/edms" , "root","HaMiM1234kHaN");
+		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/edms" , "root","");
 	}
 	catch(SQLException e)
 	{
