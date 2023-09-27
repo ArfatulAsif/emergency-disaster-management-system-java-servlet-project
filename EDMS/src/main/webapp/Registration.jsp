@@ -16,7 +16,7 @@
 	}
 	try
 	{
-		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/edms" , "root","");
+		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/edms" , "root","HaMiM1234kHaN");
 	}
 	catch(SQLException e)
 	{
@@ -318,7 +318,6 @@ var subjectObject = {
               <span class="label-text">Username</span>
             </label>
             <input name="Username" type="text" class="input input-bordered w-full" required/>
-            <p>${message}</p>
             <!-- Email -->
             <label class="label">
               <span class="label-text">Email</span>
@@ -353,7 +352,7 @@ var subjectObject = {
             </select>
             <!-- select district -->
             <label class="label">
-              <span class="label-text">Select User Type</span>
+              <span class="label-text">Select District</span>
             </label>
             <select id="DistrictSelectS"class="select select-bordered w-full"name="Districtitem" required>
               <option disabled selected>Add District</option>
@@ -387,7 +386,7 @@ var subjectObject = {
             
             <!-- select upazila -->
             <label class="label">
-              <span class="label-text">Select User Type</span>
+              <span class="label-text">Select Upazilla</span>
             </label>
             <select id="UpazillaSelectS"class="select select-bordered w-full"name="Upazilaitem" required>
               <option disabled selected>Add Upazilla</option>
@@ -424,7 +423,7 @@ var subjectObject = {
             
             <!-- select union -->
             <label class="label">
-              <span class="label-text">Select User Type</span>
+              <span class="label-text">Select Union</span>
             </label>
             <select id="UnionSelectS"class="select select-bordered w-full"name="Unionitem" required>
               <option disabled selected>Add Union</option>
@@ -450,9 +449,6 @@ var subjectObject = {
 					        fetch("Registration.jsp?UnionValue=" + encodeURIComponent(selectedText))
 					        .then(response => response.text())
 					        .then(data => {
-					        	
-					        	 
-					        	
 					            console.log(data); // Log the response from the server
 					        })
 					        .catch(error => {
@@ -466,7 +462,7 @@ var subjectObject = {
 						    
 			                String selectedUnion = request.getParameter("UnionValue");
 					
-						String aise="null";
+						/* String aise="null";
 						
 						if(aise=="null"&& selectedUnion!=null){
 						
@@ -474,7 +470,7 @@ var subjectObject = {
 					 ps.setString(1,selectedUnion);
 					 ps.executeUpdate();
 						
-						}
+						} */
 					%>
             
 			<input type="hidden" name="selectedUnion" id="selectedUnionHiddenBox" value="selectedUnion">
@@ -495,6 +491,7 @@ var subjectObject = {
             ></textarea>
 			<!-- submit button -->
 			<input class="btn btn-warning my-5 w-full" type="submit" value="Submit">
+			<p style="color:red;">${message}</p>
           </form>
         </div>
       </div>
