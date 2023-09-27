@@ -67,6 +67,7 @@ String LocationUsername = request.getParameter("LocationUsernameFromLocationProf
                         <!-- submit button -->
                         <input type="hidden" name="LocationUsername" value=<%=LocationUsername %>>
                         <input class="btn btn-warning my-5 w-full" type="submit" value="Submit">
+                        <p style="color:red;">${message}</p>
                     </form>
 
                 </div>
