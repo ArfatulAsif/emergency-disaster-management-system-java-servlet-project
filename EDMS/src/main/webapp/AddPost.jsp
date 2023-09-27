@@ -452,6 +452,7 @@ var subjectObject = {
 
                         <!-- submit button -->
                         <input class="btn btn-warning my-5 w-full" type="submit" value="Post">
+			<p style="color:red;">${message}</p>
                     </form>
 
                 </div>
