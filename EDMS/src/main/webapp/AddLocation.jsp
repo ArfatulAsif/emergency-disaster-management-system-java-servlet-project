@@ -405,7 +405,7 @@ var subjectObject = {
 			  <!-- Add your relief / shelter location: -->
 			  	<!-- select district -->
 				  <label class="label">
-					<span class="label-text">Select User Type</span>
+					<span class="label-text">Select District</span>
 				  </label>
 				  <select id="DistrictSelect"
 					class="select select-bordered w-full"
@@ -442,7 +442,7 @@ var subjectObject = {
 				  
 				  <!-- select upazila -->
 				  <label class="label">
-					<span class="label-text">Select User Type</span>
+					<span class="label-text">Select Upazilla</span>
 				  </label>
 				  <select id="UpazillaSelect"
 					class="select select-bordered w-full"
@@ -480,7 +480,7 @@ var subjectObject = {
 				  
 				  <!-- select union -->
 				  <label class="label">
-					<span class="label-text">Select User Type</span>
+					<span class="label-text">Select Union</span>
 				  </label>
 				  <select id="UnionSelect"
 					class="select select-bordered w-full"
@@ -519,16 +519,6 @@ var subjectObject = {
 						    
 					String selectedUnion = request.getParameter("UnionValue");
 					
-					String aise="null";
-					
-					if(aise=="null"&& selectedUnion!=null){
-					
-				 PreparedStatement ps=con.prepareStatement("insert into setloc(Location)values(?)");
-				 ps.setString(1,selectedUnion);
-				 ps.executeUpdate();
-					
-					}
-					
 					
 					%>
 				  
@@ -548,7 +538,7 @@ var subjectObject = {
 					  >Give your relief shelter / areas Google-map URL</span
 					>
 				  </label>
-				  <p>${message}</p>
+				  
 				  <input
 					name="loc-link"
 					type="text"
@@ -556,7 +546,7 @@ var subjectObject = {
 					required
 				  />
 				  <input class="btn btn-warning my-5 w-full" type="submit" value="Submit">
-
+				  <p style="color:red;">${message}</p>
 
 
           </form>
