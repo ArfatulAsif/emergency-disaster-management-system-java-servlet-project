@@ -399,7 +399,7 @@ public class MachineLearning extends HttpServlet {
 			
 		}
 		
-		
+		response.sendRedirect("Profile.jsp");
 		
 		
 		
