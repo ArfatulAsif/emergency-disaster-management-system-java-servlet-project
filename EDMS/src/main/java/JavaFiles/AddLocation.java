@@ -176,7 +176,7 @@ public class AddLocation extends HttpServlet {
 			ps1.setInt(10, ac);
 			ps1.setInt(11, tot);
 			ps1.setString(12, cont);
-			ps1.setString(13, "Active");
+			ps1.setString(13, "Inactive");
 			ps1.setString(14,LocationUser);
 			ps1.setString(15, formattedDateTime);
 			ps1.setLong(16, secondsSinceEpoch);
