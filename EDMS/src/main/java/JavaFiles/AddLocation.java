@@ -193,7 +193,7 @@ public class AddLocation extends HttpServlet {
 			is1=part1.getInputStream();
 			is2=part2.getInputStream();
 			
-			ps3.setString(4, "Active");
+			ps3.setString(4, "Inactive");
 			ps3.setLong(5, secondsSinceEpoch);
 			ps3.setFloat(6, 0);
 			ps3.setFloat(7, 0);
