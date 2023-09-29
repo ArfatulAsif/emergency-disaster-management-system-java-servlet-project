@@ -13,6 +13,7 @@
      -->
         
     	<title>Emergency Disaster Management System</title>
+    	<link rel="shortcut icon" href="IMAGES/icons8-tsunami-64.png" type="image/x-icon">
 	    <link rel="stylesheet" href="CSS/Home.css">
 	    <!-- Tailwind CDN -->
 	    <script src="https://cdn.tailwindcss.com"></script>
@@ -230,7 +231,7 @@ var subjectObject = {
     }
       
 //       print data
-	fetch('http://localhost:8080/EDMS/DataServlet')
+	fetch('http://localhost:8080/edms_demo/DataServlet')
 	.then(res => res.json())
 	.then(data => {
 		const table = document.getElementById('data_table');
@@ -476,7 +477,7 @@ var subjectObject = {
     		        <th class="dat4">Activity</th>
     		    </tr>`;
         		
-     			fetch('http://localhost:8080/EDMS/DataServlet')
+     			fetch('http://localhost:8080/edms_demo/DataServlet')
      			.then(res => res.json())
      			.then(data => {
      				console.log(data)
@@ -624,7 +625,12 @@ var subjectObject = {
         	upazComponent.addEventListener('change', updateTable);
         	unionComponent.addEventListener('change', updateTable);
         </script>
-        
+        <!-- Start of reference -->
+		<div class="p-6 m-6 flex flex-col justify-center items-center">
+			<h5 class="text-center text-slate-400 font-semibold italic">In our ML regression analysis, we gratefully acknowledge the utilization of data from <a class="text-center text-slate-400 italic underline hover:text-black" href="http://www.ffwc.gov.bd/" target="_blank">Flood Forcasting & Warning Center</a> to enhance our model's accuracy and effectiveness.</h5>
+    		
+		</div>
+		<!-- End of reference -->
         <!-- Start of Footer -->
     <div class='flex justify-between gap-0 mt-6'>
         <div class='hidden md:flex flex-col items-center justify-center gap-3 border-[1px] p-8 min-w-[250px]'>
