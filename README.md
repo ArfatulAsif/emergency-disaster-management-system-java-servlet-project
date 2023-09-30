@@ -152,6 +152,16 @@ Anyone can ask for help in any particular location.
 
 Anyone can add their contribution info in any particular location.
 
+## Project Architecture
+
+<img src="ProjectArchi.PNG">
+
+
+## Database 
+
+<img src="Database.PNG">
+
+
 ## Conclusion
 
 EDMS operates as an information-sharing platform, facilitating informed decision-making for individuals and volunteer groups. Users cannot delete posts or locations they've shared to maintain transparency and system integrity.
