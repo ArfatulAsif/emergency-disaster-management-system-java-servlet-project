@@ -191,3 +191,11 @@ Our project relies on the following technologies, libraries, and tools:
 ---
 
 **Note**: EDMS is a non-monetized platform focused solely on disaster management and relief coordination.
+
+## Achievements :
+
+Our Project has been selected as one of the top 10 finalist for the therap java fest 2023 in Bangladesh. 
+<img src="Certificate_asif.jpg">
+
+
+
