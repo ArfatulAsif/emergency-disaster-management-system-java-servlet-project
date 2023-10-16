@@ -195,7 +195,7 @@ Our project relies on the following technologies, libraries, and tools:
 ## Achievements :
 
 Our Project has been selected as one of the top 10 finalist for the therap java fest 2023 in Bangladesh. 
-<img src="Therap Java Fest Finalist Certificate.jpg">
+<img src="Therap Java Fest Finalist Certificate.jpg" width="500" height="372" >
 
 
 
