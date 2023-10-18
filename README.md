@@ -10,8 +10,8 @@
 ## Achievements :
 
 Our Project has been selected as one of the top 10 finalist for the therap java fest 2023 in Bangladesh. 
-<img src="Therap Java Fest Finalist Certificate.jpg" width="435" height="324" >
-<img src="Therap Java Fest Certificate1.jpeg" width="435" height="324" >
+<img src="Therap Java Fest Finalist Certificate.jpg" width="400" height="298" >
+<img src="Therap Java Fest Certificate1.jpeg"  width="400" height="298" >
 
 ## Introduction
 
