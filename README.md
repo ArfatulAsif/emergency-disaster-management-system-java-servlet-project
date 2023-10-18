@@ -6,6 +6,13 @@
 
 ### <a href="https://youtu.be/D0A-8E1dcPM" target="_blank">Youtube Demonstration Video</a>
 
+
+## Achievements :
+
+Our Project has been selected as one of the top 10 finalist for the therap java fest 2023 in Bangladesh. 
+<img src="Therap Java Fest Finalist Certificate.jpg" width="435" height="324" >
+<img src="Therap Java Fest Certificate1.jpeg" width="435" height="324" >
+
 ## Introduction
 
 Before we delve into the details of our project, it's essential to understand the story that inspired us to create the Emergency Disaster Management System (EDMS). In 2022, Sylhet experienced a devastating and prolonged flood that resulted in significant losses. During this challenging period, our team, along with some dedicated friends, organized a volunteer group. We collected funds, identified relief centers in the city, and regularly provided essential supplies such as food and water. We also extended our aid to rural areas.
@@ -191,11 +198,5 @@ Our project relies on the following technologies, libraries, and tools:
 ---
 
 **Note**: EDMS is a non-monetized platform focused solely on disaster management and relief coordination.
-
-## Achievements :
-
-Our Project has been selected as one of the top 10 finalist for the therap java fest 2023 in Bangladesh. 
-<img src="Therap Java Fest Finalist Certificate.jpg" width="500" height="372" >
-
 
 
